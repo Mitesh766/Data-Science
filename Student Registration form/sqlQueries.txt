@@ -1,0 +1,23 @@
+
+
+create database registration_db;
+
+
+
+use registration_db;	
+
+
+CREATE TABLE USER_DATA (
+  Id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  STUDENT_NAME VARCHAR(30),
+  Father_name VARCHAR(30),
+  Mother_name varchar(30),
+  Phone varchar(12),
+  Email varchar(30),
+  DOB date,
+  Address varchar(80),
+  Blood_Group varchar(3),
+  Department varchar(30),
+  Course varchar(30),
+  Password varchar(256)
+);

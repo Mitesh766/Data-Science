@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<style>
+    body{
+        background: #ff00cc;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #333399, #ff00cc);
+color: aqua;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+font-size: 36px;
+
+    }
+
+    form {
+        display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+    }
+
+    input,button{
+        height: 100px;
+        width: 500px;
+        font-size: 36px;
+        text-align: center;
+    }
+</style>
+<body>
+    <h2>Register</h2>
+    <form method="POST" action="/register">
+        
+
+            <input id="sname" type="text" name="studentName" placeholder="Student Name" required><br>
+    
+        <input type="text" name="fatherName" placeholder="Father Name" required><br>
+        <input type="text" name="motherName" placeholder="Mother Name" required><br>
+        <input type="tel" name="phoneNumber" placeholder="Phone number" required><br>
+        <input type="email" name="email" placeholder="Email" required><br>
+        <input type="date" name="dob" placeholder="Date of Birth" required><br>
+        <input type="text" name="address" placeholder="Address" required><br>
+        <input type="text" name="bloodGroup" placeholder="Blood Group" required><br>
+        <input type="text" name="department" placeholder="Department" required><br>
+        <input type="text" name="course" placeholder="Course" required><br>
+        <input type="password" name="password" placeholder="Password" required><br>
+        
+        
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>

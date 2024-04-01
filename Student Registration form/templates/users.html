@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registered Users</title>
+</head>
+<style>
+    body{
+        background: #ff00cc;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #333399, #ff00cc);
+color: aqua;
+font-size: 24px;
+font-weight: 500;
+    }
+    a{
+        color: aqua;
+        padding-top:20px;
+        display: inline-block;
+        font-size: 36px;
+    }
+
+    table{
+        border:4px solid red;
+    }
+</style>
+<body>
+    <h2>Registered Users</h2>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Student Name</th>
+            <th>Father Name</th>
+            <th>Mother Name</th>
+            <th>Phone Number</th>
+            <th>Email</th>
+            <th>Date of birth</th>
+            <th>Address</th>
+            <th>Blood Group</th>
+            <th>Department</th>
+            <th>Course</th>
+            <th>Password</th>
+        </tr>
+        {% for user in users %}
+        <tr>
+            <td>{{ user[0] }}</td>
+            <td>{{ user[1] }}</td>
+            <td>{{ user[2] }}</td>
+            <td>{{ user[3] }}</td>
+            <td>{{ user[4] }}</td>
+            <td>{{ user[5] }}</td>
+            <td>{{ user[6] }}</td>
+            <td>{{ user[7] }}</td>
+            <td>{{ user[8] }}</td>
+            <td>{{ user[9] }}</td>
+            <td>{{ user[10] }}</td>
+            <td>{{ user[11] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/">Register New User</a>
+</body>
+</html>
